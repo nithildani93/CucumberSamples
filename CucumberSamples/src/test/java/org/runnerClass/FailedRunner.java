@@ -5,10 +5,8 @@ import org.junit.runner.RunWith;
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
-
-
 @RunWith(Cucumber.class)
-@CucumberOptions(features= {"C:\\Users\\Ezhil Vidya\\git\\CucumberSamples\\CucumberSamples\\FeatureFiles\\wplogin.feature"},
+@CucumberOptions(features= {"@target/rerun.txt"},
 							glue={"org.logindefinition"},
 							dryRun=false,
 							monochrome = true,
@@ -16,7 +14,6 @@ import cucumber.api.junit.Cucumber;
 									"rerun:target/rerun.txt"}
 							
 							)
-public class RunnerFile {
-
+public class FailedRunner {
 
 }
